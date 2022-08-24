@@ -11,7 +11,7 @@ public class UIMenu {
     public static final String[] MONTHS = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio" , "Agosto", "Septiembre", "Octubre", "Noviembre", "Didiembre"};
 
     public static Doctor doctorLogged;
-    private static Patient patientlogged;
+    public static Patient patientLogged;
 
     public static void showMenu() {
         System.out.println("Welcome to My Appointments");
@@ -70,7 +70,7 @@ public class UIMenu {
                         emailCorrect = true;
                         //Obtener el usuario logueado
                         doctorLogged = d;
-                        //showDoctorMenu
+                        UIDoctorMenu.showDoctorMenu();
                     }
                 }
             }
@@ -80,7 +80,7 @@ public class UIMenu {
                     if (p.getEmail().equals(email)){
                         emailCorrect = true;
                         //Obtener el usuario logueado
-                        patientlogged = p;
+                        patientLogged = p;
                         //showPatientMenu
                     }
                 }
