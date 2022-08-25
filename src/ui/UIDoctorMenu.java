@@ -14,7 +14,7 @@ public class UIDoctorMenu {
         do {
             System.out.println("\n\n");
             System.out.println("Doctor");
-            System.out.println("Welcome" + UIMenu.doctorLogged.getName());
+            System.out.println("Welcome " + UIMenu.doctorLogged.getName());
             System.out.println("1. Add Available Appointment");
             System.out.println("2. My Schedule Appointments");
             System.out.println("0. Logout");

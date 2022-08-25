@@ -79,9 +79,8 @@ public class UIMenu {
                 for (Patient p: patients){
                     if (p.getEmail().equals(email)){
                         emailCorrect = true;
-                        //Obtener el usuario logueado
                         patientLogged = p;
-                        //showPatientMenu
+                        UIPatientMenu.showPatientMenu();
                     }
                 }
             }
